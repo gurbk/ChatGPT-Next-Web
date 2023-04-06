@@ -120,7 +120,7 @@ function _Home() {
         <div className={styles["sidebar-header"]}>
           <div className={styles["sidebar-title"]}>故人的ChatGPT助理</div>
           <div className={styles["sidebar-sub-title"]}>
-           输入自己的APIkey即可使用
+           提示:近日流量过大免费次数已用尽，可在设置中填入自己的Key进行使用
           </div>
           <div className={styles["sidebar-logo"]}>
             <ChatGptIcon />
