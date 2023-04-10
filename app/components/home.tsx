@@ -177,8 +177,10 @@ function _Home() {
       >
         <div className={styles["sidebar-header"]}>
           <div className={styles["sidebar-title"]}>故人的ChatGPT助理</div>
-          <div className={styles["sidebar-sub-title"]} style={{background: "linear-gradient(to right, #ff6e7f, #bfe9ff)"}}>
-            近日流量过大，额度有限，请访问<a href="https://blog.vvvv.gay/article/34" target="_blank" rel="noopener noreferrer">免费镜像</a>
+          <div className={styles["sidebar-sub-title"]}>
+            近日流量过大，额度有限，请访问<a href="https://blog.vvvv.gay/article/34" target="_blank" rel="noopener noreferrer">
+            <span className={styles["sidebar-sub-title-gradient"]}>免费镜像</span>
+            </a>
           </div>
           <div className={styles["sidebar-logo"]}>
             <ChatGptIcon />
