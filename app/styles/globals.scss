@@ -305,3 +305,9 @@ pre {
     overflow: auto;
   }
 }
+.sidebar-sub-title-gradient {
+  background: -webkit-linear-gradient(left, #ff6e7f, #bfe9ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
