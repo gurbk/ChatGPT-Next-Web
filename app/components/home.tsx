@@ -171,7 +171,9 @@ function _Home() {
         <div className={styles["sidebar-header"]}>
           <div className={styles["sidebar-title"]}>故人的ChatGPT助理</div>
           <div className={styles["sidebar-sub-title"]}>
-           提示:近日流量过大免费次数已用尽，可在设置中填入自己的Key进行使用
+            近日流量过大，额度有限，请访问<a href="https://blog.vvvv.gay/article/34" target="_blank" rel="noopener noreferrer">
+            <span className={styles["sidebar-sub-title-gradient"]}>免费镜像</span>
+            </a>
           </div>
           <div className={styles["sidebar-logo"]}>
             <ChatGptIcon />
