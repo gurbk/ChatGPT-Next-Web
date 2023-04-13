@@ -169,7 +169,7 @@ function _Home() {
         <div className={styles["sidebar-header"]}>
           <div className={styles["sidebar-title"]}>故人的ChatGPT助理</div>
           <div className={styles["sidebar-sub-title"]}>
-            请通过设置页面把模型改为gpt-3.5-turbo-0301，如遇网站不可用，请访问<a href="https://blog.vvvv.gay/article/34" target="_blank" rel="noopener noreferrer">
+            近日流量过大，额度已用尽，请访问<a href="https://blog.vvvv.gay/article/34" target="_blank" rel="noopener noreferrer">
             <span className={styles["sidebar-sub-title-gradient"]}>免费镜像</span>
             </a>
           </div>
