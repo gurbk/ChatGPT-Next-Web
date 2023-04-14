@@ -169,7 +169,7 @@ function _Home() {
         <div className={styles["sidebar-header"]}>
           <div className={styles["sidebar-title"]}>故人的ChatGPT助理</div>
           <div className={styles["sidebar-sub-title"]}>
-            近日流量过大，额度已用尽，请访问<a href="https://blog.vvvv.gay/article/34" target="_blank" rel="noopener noreferrer">
+            网站已恢复，如遇网站不可用，请访问<a href="https://blog.vvvv.gay/article/34" target="_blank" rel="noopener noreferrer">
             <span className={styles["sidebar-sub-title-gradient"]}>免费镜像</span>
             </a>
           </div>
