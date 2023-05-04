@@ -98,7 +98,7 @@ export function SideBar(props: { className?: string }) {
       <div className={styles["sidebar-header"]}>
         <div className={styles["sidebar-title"]}>故人的ChatGPT小助手</div>
         <div className={styles["sidebar-sub-title"]}>
-        每人每天0.1就能运营下去<a href="https://520.txsb.gq/fireworks/1.html" target="_blank" rel="noopener noreferrer">
+        官方限制是3条/min，可以一次性发完所有提问 每人每天0.2就能运营下去<a href="https://520.txsb.gq/fireworks/1.html" target="_blank" rel="noopener noreferrer">
             <span className={styles["sidebar-sub-title-gradient"]}>欢迎捐赠</span>
             </a>
         </div>
