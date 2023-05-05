@@ -96,18 +96,19 @@ export function SideBar(props: { className?: string }) {
       }`}
     >
       <div className={styles["sidebar-header"]}>
-        <div className={styles["sidebar-title"]}>故人的ChatGPT小助手</div>
-        <div className={styles["sidebar-sub-title"]}>
-          官方限制是3条/min，可以一次性发完所有提问<br>
-          已捐赠用户联系wx：guren_222  获取独立key<br>
-          每人每天0.2就能运营下去<a href="https://520.txsb.gq/fireworks/1.html" target="_blank" rel="noopener noreferrer">
-            <span className={styles["sidebar-sub-title-gradient"]}>欢迎捐赠</span>
-          </a>
-      </div>
-        <div className={styles["sidebar-logo"] + " no-dark"}>
-          <ChatGptIcon />
-        </div>
-      </div>
+  <div className={styles["sidebar-title"]}>故人的ChatGPT小助手</div>
+  <div className={styles["sidebar-sub-title"]}>
+    官方限制是3条/min，可以一次性发完所有提问<br>
+    已捐赠用户联系wx：guren_222  获取独立key<br>
+    每人每天0.2就能运营下去<a href="https://520.txsb.gq/fireworks/1.html" target="_blank" rel="noopener noreferrer">
+      <span className={styles["sidebar-sub-title-gradient"]}>欢迎捐赠</span>
+    </a>
+  </div>
+  <div className={styles["sidebar-logo"] + " no-dark"}>
+    <ChatGptIcon />
+  </div>
+</div>
+
 
       <div className={styles["sidebar-header-bar"]}>
         <IconButton
