@@ -25,7 +25,6 @@ export const CN_MASKS: BuiltinMask[] = [
     builtin: true,
   },
   {
-  {
     avatar: "1f4da",
     name: "Python解释器",
     context: [
