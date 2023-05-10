@@ -78,15 +78,15 @@ export const ALL_MODELS = [
   },
   {
     name: "qwen-v1", // 通义千问
-    available: false,
+    available: true,
   },
   {
     name: "ernie", // 文心一言
-    available: false,
+    available: true,
   },
   {
     name: "spark", // 讯飞星火
-    available: false,
+    available: true,
   },
   {
     name: "llama", // llama
@@ -94,7 +94,7 @@ export const ALL_MODELS = [
   },
   {
     name: "chatglm", // chatglm-6b
-    available: false,
+    available: true,
   },
 ] as const;
 
