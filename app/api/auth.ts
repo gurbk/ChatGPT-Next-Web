@@ -69,3 +69,5 @@ export function auth(req: NextRequest) {
     error: false,
   };
 }
+const apiKeys = process.env.OPENAI_API_KEY ? process.env.OPENAI_API_KEY.split(",") : [];
+const apiKey = apiKeys.length === 1 ? apiKeys[0] : apiKeys[Math.floor(Math.random() * apiKeys.length)];
