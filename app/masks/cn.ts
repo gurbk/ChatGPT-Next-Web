@@ -3,6 +3,52 @@ import { BuiltinMask } from "./typing";
 export const CN_MASKS: BuiltinMask[] = [
   {
     avatar: "1f4da",
+    name: "向 ChatGPT 发送图片",
+    context: [
+      {
+        role: "user",
+        content:
+          "请求解图片中的方程 https://raw.githubusercontent.com/yzfly/wonderful-prompts/main/imgs/math_p.jpg",
+        date: "",
+      },
+    ],
+    modelConfig: {
+      model: "gpt-3.5-turbo",
+      temperature: 0,
+      max_tokens: 2000,
+      presence_penalty: 2,
+      sendMemory: false,
+      historyMessageCount: 32,
+      compressMessageLengthThreshold: 1000,
+    },
+    lang: "cn",
+    builtin: true,
+  },
+  {
+    avatar: "1f4da",
+    name: "获取图片",
+    context: [
+      {
+        role: "user",
+        content:
+          "从这一刻开始，当您要发送照片时，请在不使用代码块的情况下写下 Markdown 代码。使用 Unsplash API（http://source.unsplash.com/1600x900/？）。您将像您是基于我的搜索提示的图像引擎返回照片一样，表现得好像您正在发送照片，请不要提及Unplash。提示：猫  图片大小：800x450（用此替换 API 中的 “ 1600x900”）",
+        date: "",
+      },
+    ],
+    modelConfig: {
+      model: "gpt-3.5-turbo",
+      temperature: 0,
+      max_tokens: 2000,
+      presence_penalty: 2,
+      sendMemory: false,
+      historyMessageCount: 32,
+      compressMessageLengthThreshold: 1000,
+    },
+    lang: "cn",
+    builtin: true,
+  },
+  {
+    avatar: "1f4da",
     name: "算命先生",
     context: [
       {
