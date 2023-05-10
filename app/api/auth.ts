@@ -50,17 +50,10 @@ export function auth(req: NextRequest) {
 
   // if user does not provide an api key, inject system api key
   if (!token) {
-    const apiKey = serverConfig.apiKey;
-    if (apiKey) {
-      console.log("[Auth] use system api key");
-      req.headers.set("Authorization", `Bearer ${apiKey}`);
-    } else {
-      console.log("[Auth] admin did not provide an api key");
-      return {
-        error: true,
-        msg: "Empty Api Key",
-      };
-    }
+    const apiKeys = process.env.OPENAI_API_KEY ? process.env.OPENAI_API_KEY.split(",") : [];
+    const apiKey = apiKeys.length === 1 ? apiKeys[0] : apiKeys[Math.floor(Math.random() * apiKeys.length)];
+    console.log("[Auth] use generated api key");
+    req.headers.set("Authorization", `Bearer ${apiKey}`);
   } else {
     console.log("[Auth] use user api key");
   }
@@ -69,5 +62,3 @@ export function auth(req: NextRequest) {
     error: false,
   };
 }
-const apiKeys = process.env.OPENAI_API_KEY ? process.env.OPENAI_API_KEY.split(",") : [];
-const apiKey = apiKeys.length === 1 ? apiKeys[0] : apiKeys[Math.floor(Math.random() * apiKeys.length)];
