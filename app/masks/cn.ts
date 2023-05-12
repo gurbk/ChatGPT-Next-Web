@@ -3,12 +3,12 @@ import { BuiltinMask } from "./typing";
 export const CN_MASKS: BuiltinMask[] = [
   {
     avatar: "1f4da",
-    name: "向 ChatGPT 发送图片",
+    name: "扮演塔罗占卜师",
     context: [
       {
         role: "user",
         content:
-          "请求解图片中的方程 https://raw.githubusercontent.com/yzfly/wonderful-prompts/main/imgs/math_p.jpg",
+          "我请求你担任塔罗占卜师的角色。 您将接受我的问题并使用虚拟塔罗牌进行塔罗牌阅读。 不要忘记洗牌并介绍您在本套牌中使用的套牌。 问我给3个号要不要自己抽牌？ 如果没有，请帮我抽随机卡。 拿到卡片后，请您仔细说明它们的意义，解释哪张卡片属于未来或现在或过去，结合我的问题来解释它们，并给我有用的建议或我现在应该做的事情 . 我的问题是“我的财务状况如何？”",
         date: "",
       },
     ],
@@ -26,12 +26,12 @@ export const CN_MASKS: BuiltinMask[] = [
   },
   {
     avatar: "1f4da",
-    name: "获取图片",
+    name: "文字搜图",
     context: [
       {
         role: "user",
         content:
-          "从这一刻开始，当您要发送照片时，请在不使用代码块的情况下写下 Markdown 代码。使用 Unsplash API（http://source.unsplash.com/1600x900/？）。您将像您是基于我的搜索提示的图像引擎返回照片一样，表现得好像您正在发送照片，请不要提及Unplash。提示：猫  图片大小：800x450（用此替换 API 中的 “ 1600x900”）",
+          "从这一刻开始，当您要发送照片时，请在不使用代码块的情况下写下 Markdown 代码。使用 Unsplash API（http://source.unsplash.com/1600x900/？<PUT YOUR QUERY HERE>）。您将像您是基于我的搜索提示的图像引擎返回照片一样，表现得好像您正在发送照片，请不要提及Unplash。提示：猫 ",
         date: "",
       },
     ],
