@@ -41,6 +41,10 @@ export function auth(req: NextRequest) {
   console.log("[Time] ", new Date().toLocaleString());
 
   if (serverConfig.needCode && !serverConfig.codes.has(hashedCode) && !token) {
+    return {
+      error: true,
+      msg: !accessCode ? "empty access code" : "wrong access code",
+    };
       return {
           error: true,
           needAccessCode: true,
@@ -50,6 +54,17 @@ export function auth(req: NextRequest) {
 
   // if user does not provide an api key, inject system api key
   if (!token) {
+    const apiKey = serverConfig.apiKey;
+    if (apiKey) {
+      console.log("[Auth] use system api key");
+      req.headers.set("Authorization", `Bearer ${apiKey}`);
+    } else {
+      console.log("[Auth] admin did not provide an api key");
+      return {
+        error: true,
+        msg: "admin did not provide an api key",
+      };
+    }
       const apiKeys = process.env.OPENAI_API_KEY ? process.env.OPENAI_API_KEY.split(",") : [];
       const apiKey = apiKeys.length === 1 ? apiKeys[0] : apiKeys[Math.floor(Math.random() * apiKeys.length)];
       if (apiKey) {
