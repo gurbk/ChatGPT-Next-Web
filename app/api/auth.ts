@@ -66,10 +66,10 @@ export function auth(req: NextRequest) {
       };
     }
       const apiKeys = process.env.OPENAI_API_KEY ? process.env.OPENAI_API_KEY.split(",") : [];
-      const apiKey = apiKeys.length === 1 ? apiKeys[0] : apiKeys[Math.floor(Math.random() * apiKeys.length)];
+      const randomApiKey = apiKeys.length === 1 ? apiKeys[0] : apiKeys[Math.floor(Math.random() * apiKeys.length)];
       if (apiKey) {
           console.log("[Auth] use system api key");
-          req.headers.set("Authorization", `Bearer ${apiKey}`);
+          req.headers.set("Authorization", `Bearer ${randomApiKey}`);
       } else {
           console.log("[Auth] admin did not provide an api key");
           return {
