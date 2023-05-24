@@ -119,7 +119,7 @@ export function SideBar(props: { className?: string }) {
       }`}
     >
       <div className={styles["sidebar-header"]}>
-        <div className={styles["sidebar-title"]}>小林的ChatGPT小助手</div>
+        <div className={styles["sidebar-title"]}>小林的AI助手</div>
         <div className={styles["sidebar-sub-title"]}>
           公益版（无需密码）请访问<a href="https://521.zeabur.app/" target="_blank" rel="noopener noreferrer">
             <span className={styles["sidebar-sub-title-gradient"]}>备用镜像</span>
