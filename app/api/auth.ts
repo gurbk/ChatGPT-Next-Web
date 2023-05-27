@@ -45,11 +45,6 @@ export function auth(req: NextRequest) {
       error: true,
       msg: !accessCode ? "empty access code" : "wrong access code",
     };
-      return {
-          error: true,
-          needAccessCode: true,
-          msg: "Please go settings page and fill your access code.",
-      };
   }
 
   // if user does not provide an api key, inject system api key
@@ -61,23 +56,11 @@ export function auth(req: NextRequest) {
     } else {
       console.log("[Auth] admin did not provide an api key");
     }
-      const apiKeys = process.env.OPENAI_API_KEY ? process.env.OPENAI_API_KEY.split(",") : [];
-      const randomApiKey = apiKeys.length === 1 ? apiKeys[0] : apiKeys[Math.floor(Math.random() * apiKeys.length)];
-      if (apiKey) {
-          console.log("[Auth] use system api key");
-          req.headers.set("Authorization", `Bearer ${randomApiKey}`);
-      } else {
-          console.log("[Auth] admin did not provide an api key");
-          return {
-              error: true,
-              msg: "Empty Api Key",
-          };
-      }
   } else {
-      console.log("[Auth] use user api key");
+    console.log("[Auth] use user api key");
   }
 
   return {
-      error: false,
+    error: false,
   };
 }
