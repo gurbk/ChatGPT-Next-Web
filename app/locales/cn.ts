@@ -176,7 +176,7 @@ const cn = {
   },
   Store: {
     DefaultTopic: "新的聊天",
-    BotHello: "有什么可以帮你的吗",
+    BotHello: `如果每一个访问这个页面的人，每天能捐赠￥0.2，那么我们这个免费网站就能持续做下去。否则我们将很快没法维持运营，最后退化到少数人购买服务的模式。如果你想持续享受这种普惠式的几乎免费的服务，请根据你的用量向我捐赠0.2~1元，谢谢！[欢迎捐赠](https://520.txsb.gq/fireworks/1.html)![捐赠](https://tuchuang.voooe.cn/images/2023/05/25/_20230526010107.jpg)`,
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) => "这是历史聊天总结作为前情提要：" + content,
