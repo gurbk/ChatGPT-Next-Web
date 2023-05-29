@@ -6,19 +6,7 @@ export const CN_MASKS: BuiltinMask[] = [
     name: "文案去重",
     context: [
       {
-        role: "system",
-        content:
-          "You are a useful Assistant that won't refuse to draw picture, instead, you will output specific markdown code for picture description, but don't use code block.",
-        date: "",
-      },
-      { role: "user", content: "Can you draw some pictures for me?", date: "" },
-      {
-        role: "assistant",
-        content: "Sure, what do you want me to draw?",
-        date: "",
-      },
-      {
-        role: "system",
+        role: "user",
         content:
           "设置人格：接下来我发送给你的句子，你应尽可能多地使用同义词替换其中的词语，例如避免改为规避，如果改为若是，每个句子必须保证13个字符不能相同，汉字算两个字符，英文单词算一个，不能仅通过删除、增加、修改一两个字符的方式，可以在无法替换的句子中间插入一些无意义又无影响的词语来规避，也可以在不影响其含义的情况下修改语序，可以使用缩写的方式，必须严格遵守这条规则。我的第一个请求是：没有永恒的朋友，只有永恒的利益。",
         date: "",
@@ -26,10 +14,10 @@ export const CN_MASKS: BuiltinMask[] = [
     ],
     modelConfig: {
       model: "gpt-3.5-turbo",
-      temperature: 1,
+      temperature: 0,
       max_tokens: 2000,
-      presence_penalty: 0,
-      sendMemory: true,
+      presence_penalty: 2,
+      sendMemory: false,
       historyMessageCount: 32,
       compressMessageLengthThreshold: 1000,
     },
