@@ -22,7 +22,7 @@ export const CN_MASKS: BuiltinMask[] = [
       compressMessageLengthThreshold: 2000,
     },
     lang: "cn",
-    builtin: false,
+    builtin: true,
   },
   {
     avatar: "1f468-200d-1f3eb",
@@ -45,7 +45,7 @@ export const CN_MASKS: BuiltinMask[] = [
       compressMessageLengthThreshold: 2000,
     },
     lang: "cn",
-    builtin: false,
+    builtin: true,
   },
   {
     avatar: "1f468-200d-1f3eb",
@@ -68,7 +68,7 @@ export const CN_MASKS: BuiltinMask[] = [
       compressMessageLengthThreshold: 2000,
     },
     lang: "cn",
-    builtin: false,
+    builtin: true,
   },
   {
     avatar: "1f468-200d-1f3eb",
@@ -91,7 +91,7 @@ export const CN_MASKS: BuiltinMask[] = [
       compressMessageLengthThreshold: 2000,
     },
     lang: "cn",
-    builtin: false,
+    builtin: true,
   },
   {
     avatar: "1f468-200d-1f3eb",
@@ -114,7 +114,7 @@ export const CN_MASKS: BuiltinMask[] = [
       compressMessageLengthThreshold: 2000,
     },
     lang: "cn",
-    builtin: false,
+    builtin: true,
   },
   {
     avatar: "1f4da",
@@ -130,7 +130,7 @@ export const CN_MASKS: BuiltinMask[] = [
     modelConfig: {
       model: "gpt-3.5-turbo",
       temperature: 0,
-      max_tokens: 2000,
+      max_tokens: 3000,
       presence_penalty: 2,
       sendMemory: false,
       historyMessageCount: 4,
@@ -406,7 +406,7 @@ export const CN_MASKS: BuiltinMask[] = [
     modelConfig: {
       model: "gpt-3.5-turbo",
       temperature: 0,
-      max_tokens: 2000,
+      max_tokens: 4096,
       presence_penalty: 2,
       sendMemory: false,
       historyMessageCount: 4,
@@ -429,7 +429,7 @@ export const CN_MASKS: BuiltinMask[] = [
     modelConfig: {
       model: "gpt-3.5-turbo",
       temperature: 0,
-      max_tokens: 2000,
+      max_tokens: 3000,
       presence_penalty: 2,
       sendMemory: false,
       historyMessageCount: 4,
