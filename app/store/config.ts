@@ -32,7 +32,7 @@ export const DEFAULT_CONFIG = {
   modelConfig: {
     model: "gpt-3.5-turbo" as ModelType,
     temperature: 0,
-    max_tokens: 2000,
+    max_tokens: 4096,
     presence_penalty: 2,
     sendMemory: true,
     historyMessageCount: 4,
@@ -74,7 +74,7 @@ export const ALL_MODELS = [
   },
   {
     name: "text-davinci-002-render-sha-mobile",
-    available: true,
+    available: false,
   },
   {
     name: "gpt-3.5-turbo",
@@ -98,7 +98,7 @@ export const ALL_MODELS = [
   },
   {
     name: "llama", // llama
-    available: false,
+    available: true,
   },
   {
     name: "chatglm", // chatglm-6b
