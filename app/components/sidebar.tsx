@@ -121,7 +121,7 @@ export function SideBar(props: { className?: string }) {
       <div className={styles["sidebar-header"]}>
         <div className={styles["sidebar-title"]}>故人的AI助理</div>
         <div className={styles["sidebar-sub-title"]}>
-          增加了key账号池，回复速度有所提升。最近大批量封号，仅限国内使用，禁止开代理访问。后续会添加密码才能使用，请加交流群获取密码，现在key池有大量账号被封，不稳定，晚上才能处理|每人每天￥0.3就能运营下去<a href="https://520.txsb.gq/fireworks/1.html" target="_blank" rel="noopener noreferrer">
+          增加了key账号池，回复速度有所提升。最近大批量封号，禁止开代理访问。请加交流群获取密码 | 每人每天￥0.3就能运营下去<a href="https://520.txsb.gq/fireworks/1.html" target="_blank" rel="noopener noreferrer">
             <span className={styles["sidebar-sub-title-gradient"]}>欢迎捐赠</span>
           </a>
         </div>
