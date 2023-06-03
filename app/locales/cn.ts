@@ -180,7 +180,8 @@ const cn = {
                2、ChatGPT会根据语境和上下文理解用户意图，在当前会话里，它记得您之前说过的话。          
                3、OpenAI的限制：上下文词数+AI返回内容词数 token<4097（上下文+本次生成的内容总长度小于4096个token）你可以新建一个窗口提问，或者精简你的问题。
                4、它不知道2021年后发生的事情。只要你没告诉它相关的信息，它要说也是瞎说，还有不擅长数数，也就是说你叫它写多少多少字它做不到完全遵守。
-               5、我的免费ChatGPT站偶尔会崩，请大家谅解,毕竟个人经费和精力有限。 [个人博客](https://88lin.eu.org) | [交流群](https://tuchuang.voooe.cn/images/2023/05/30/_20230530150910.jpg) | [学术优化](https://chat.academic.bnu120.space/) | [论文工具](https://laorange.gitee.io/paper-assistant/) | [AI维权律师](http://lawyer.88lin.eu.org/)`,
+               5、仅限国内使用，境外IP、翻墙的一律永久封禁，禁止开代理访问！禁止开代理访问！禁止开代理访问！禁止开代理访问！禁止开代理访问！
+               6、我的免费ChatGPT站偶尔会崩，请大家谅解,毕竟个人经费和精力有限。 [个人博客](https://88lin.eu.org) | [交流群](https://tuchuang.voooe.cn/images/2023/05/30/_20230530150910.jpg) | [学术优化](https://chat.academic.bnu120.space/) | [论文工具](https://laorange.gitee.io/paper-assistant/) | [AI维权律师](http://lawyer.88lin.eu.org/)`,
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) => "这是历史聊天总结作为前情提要：" + content,
