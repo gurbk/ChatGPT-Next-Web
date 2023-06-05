@@ -4,7 +4,7 @@ const cn = {
   WIP: "加交流群获取更多信息",
   Error: {
     Unauthorized:
-      "访问密码不正确或为空，请前往[设置](/#/settings)页输入正确的访问密码，密码前往群公告查看，或者填入你自己的 OpenAI API Key | [交流群](https://tuchuang.voooe.cn/images/2023/05/30/_20230530150910.jpg)",
+      "访问密码不正确或为空，请前往[设置](/#/settings)页输入正确的访问密码，密码前往群公告查看，或者填入你自己的 OpenAI API Key | [交流群](https://cdn.staticaly.com/gh/88lin/PicX@master/20230102/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230606001517.35nvv8zekh20.jpg)",
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} 条对话`,
@@ -180,8 +180,8 @@ const cn = {
                2、ChatGPT会根据语境和上下文理解用户意图，在当前会话里，它记得您之前说过的话。          
                3、OpenAI的限制：上下文词数+AI返回内容词数 token<4097（上下文+本次生成的内容总长度小于4096个token）你可以新建一个窗口提问，或者精简你的问题。
                4、它不知道2021年后发生的事情。只要你没告诉它相关的信息，它要说也是瞎说，还有不擅长数数，也就是说你叫它写多少多少字它做不到完全遵守。
-               5、网站随时会挂，防失联请加[交流群](https://tuchuang.voooe.cn/images/2023/05/30/_20230530150910.jpg)。
-               6、我的免费ChatGPT站偶尔会崩，请大家谅解,毕竟个人经费和精力有限。 [个人博客](https://88lin.eu.org) | [交流群](https://tuchuang.voooe.cn/images/2023/05/30/_20230530150910.jpg) | [学术优化](https://chat.academic.bnu120.space/) | [论文工具](https://laorange.gitee.io/paper-assistant/) | [AI维权律师](http://lawyer.88lin.eu.org/)`,
+               5、国内风控比较严，网站随时会挂，防失联请加：[交流群](https://cdn.staticaly.com/gh/88lin/PicX@master/20230102/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230606001517.35nvv8zekh20.jpg)。
+               6、我的免费ChatGPT站偶尔会崩，请大家谅解,毕竟个人经费和精力有限。 [个人博客](https://88lin.eu.org) | [交流群](https://cdn.staticaly.com/gh/88lin/PicX@master/20230102/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230606001517.35nvv8zekh20.jpg) | [学术优化](https://chat.academic.bnu120.space/) | [论文工具](https://laorange.gitee.io/paper-assistant/) | [AI维权律师](http://lawyer.88lin.eu.org/)`,
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) => "这是历史聊天总结作为前情提要：" + content,
