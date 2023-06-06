@@ -74,7 +74,7 @@ export const ALL_MODELS = [
   },
   {
     name: "text-davinci-002-render-sha-mobile",
-    available: true,
+    available: false,
   },
   {
     name: "gpt-3.5-turbo",
@@ -98,7 +98,7 @@ export const ALL_MODELS = [
   },
   {
     name: "llama", // llama
-    available: false,
+    available: true,
   },
   {
     name: "chatglm", // chatglm-6b
