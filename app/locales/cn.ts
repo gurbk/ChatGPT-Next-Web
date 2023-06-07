@@ -8,7 +8,7 @@ const cn = {
   },
   Auth: {
     Title: "需要密码",
-    Tips: "管理员开启了密码验证，请在下方填入访问码",
+    Tips: "管理员开启了密码验证，密码前往群公告查看，请在下方填入访问码 | [交流群](https://cdn.staticaly.com/gh/88lin/PicX@master/20230102/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230606001517.35nvv8zekh20.jpg)",
     Input: "在此处填写访问码",
     Confirm: "确认",
     Later: "稍后再说",
