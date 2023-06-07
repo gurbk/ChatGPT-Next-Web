@@ -4,7 +4,14 @@ const cn = {
   WIP: "加交流群获取更多信息",
   Error: {
     Unauthorized:
-      "访问密码不正确或为空，请前往[设置](/#/settings)页输入正确的访问密码，密码前往群公告查看，或者填入你自己的 OpenAI API Key | [交流群](https://cdn.staticaly.com/gh/88lin/PicX@master/20230102/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230606001517.35nvv8zekh20.jpg)",
+      "访问密码不正确或为空，请前往[登录](/#/auth)页输入正确的访问密码，或者在[设置](/#/settings)页填入你自己的 OpenAI API Key。",
+  },
+  Auth: {
+    Title: "需要密码",
+    Tips: "管理员开启了密码验证，请在下方填入访问码",
+    Input: "在此处填写访问码",
+    Confirm: "确认",
+    Later: "稍后再说",
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} 条对话`,
