@@ -5,11 +5,11 @@ const en: RequiredLocaleType = {
   WIP: "Coming Soon...",
   Error: {
     Unauthorized:
-      "Unauthorized access, please enter access code in [auth](/#/auth) page.",
+      "Unauthorized access, please enter access code in [auth](/#/auth) page.Please check the group announcement for the password. | [Click here to view the group QR code](https://cdn.jsdelivr.net/gh/88lin/PicX@master/20230102/wxqun.6s5em3gihhs0.jpg)",
   },
   Auth: {
     Title: "Need Access Code",
-    Tips: "Please enter access code below",
+    Tips: "The administrator has enabled password verification. Please check the group announcement for the password.",
     Input: "access code",
     Confirm: "Confirm",
     Later: "Later",
