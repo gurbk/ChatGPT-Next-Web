@@ -30,13 +30,13 @@ export const DEFAULT_CONFIG = {
   dontShowMaskSplashScreen: false, // dont show splash screen when create chat
 
   modelConfig: {
-    model: "gpt-3.5-turbo" as ModelType,
+    model: "gpt-3.5-turbo-16k" as ModelType,
     temperature: 0,
-    max_tokens: 4096,
+    max_tokens: 16000,
     presence_penalty: 2,
     sendMemory: true,
     historyMessageCount: 4,
-    compressMessageLengthThreshold: 1000,
+    compressMessageLengthThreshold: 3000,
   },
 };
 
@@ -82,11 +82,11 @@ export const ALL_MODELS = [
   },
   {
     name: "gpt-3.5-turbo-0301",
-    available: true,
+    available: false,
   },
   {
     name: "gpt-3.5-turbo-0613",
-    available: true,
+    available: false,
   },
   {
     name: "gpt-3.5-turbo-16k",
