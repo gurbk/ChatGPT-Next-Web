@@ -47,7 +47,7 @@ const cn = {
       if (submitKey === String(SubmitKey.Enter)) {
         inputHints += "，Shift + Enter 换行";
       }
-      return inputHints + "，/ 触发补全(GPT-3.5一次最多只能回复1500字，如需更多，请将您的需求分段分开询问)";
+      return inputHints + "，/ 触发补全";
     },
     Send: "发送",
     Config: {
