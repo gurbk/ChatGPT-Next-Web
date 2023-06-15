@@ -118,8 +118,10 @@ export function SideBar(props: { className?: string }) {
         shouldNarrow && styles["narrow-sidebar"]
       }`}
     >
-      <div className={styles["sidebar-header"]}>
-        <div className={styles["sidebar-title"]}>故人的AI助理</div>
+      <div className={styles["sidebar-header"]} data-tauri-drag-region>
+        <div className={styles["sidebar-title"]} data-tauri-drag-region>
+          故人的AI助理
+        </div>
         <div className={styles["sidebar-sub-title"]}>
           防失联请加<a href="https://cdn.jsdelivr.net/gh/88lin/PicX@master/20230102/wxqun.5udv8ohw26o0.jpg" target="_blank" rel="noopener noreferrer">交流群</a>，如群满了联系微信：guren_222，拉你进群 | 每人每天￥0.5就能运营下去<a href="https://520.txsb.gq/fireworks/1.html" target="_blank" rel="noopener noreferrer">
             <span className={styles["sidebar-sub-title-gradient"]}>欢迎捐赠</span>
