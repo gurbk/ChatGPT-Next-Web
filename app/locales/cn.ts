@@ -1,10 +1,10 @@
 import { SubmitKey } from "../store/config";
 
 const cn = {
-  WIP: "加交流群获取更多信息",
+  WIP: "该功能正在开发中...",
   Error: {
     Unauthorized:
-      "访问密码不正确或为空，请前往[登录](/#/auth)页输入正确的访问密码，密码前往群公告查看 | [点此查看群二维码](https://cdn.jsdelivr.net/gh/88lin/PicX@master/20230102/wxqun.5udv8ohw26o0.jpg)",
+      "访问密码不正确或为空，请前往[登录](/#/auth)页输入正确的访问密码，密码前往群公告查看 | [点此查看群二维码](https://cdn.jsdelivr.net/gh/88lin/PicX@master/20230102/1.5dx0kspbxk00.jpg)",
   },
   Auth: {
     Title: "需要密码",
