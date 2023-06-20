@@ -38,7 +38,7 @@ export const DEFAULT_CONFIG = {
     frequency_penalty: 0,
     sendMemory: true,
     historyMessageCount: 4,
-    compressMessageLengthThreshold: 3000,
+    compressMessageLengthThreshold: 5000,
   },
 };
 
@@ -84,11 +84,11 @@ export const ALL_MODELS = [
   },
   {
     name: "gpt-3.5-turbo-0301",
-    available: false,
+    available: true,
   },
   {
     name: "gpt-3.5-turbo-0613",
-    available: false,
+    available: true,
   },
   {
     name: "gpt-3.5-turbo-16k",
