@@ -93,7 +93,7 @@ export const CN_MASKS: BuiltinMask[] = [
     createdAt: 1688899480511,
   },
   {
-    avatar: "1f4da",
+    avatar: "1f468-200d-1f3eb",
     name: "文案去重",
     context: [
       {
@@ -115,7 +115,7 @@ export const CN_MASKS: BuiltinMask[] = [
     },
     lang: "cn",
     builtin: true,
-    createdAt: 1688899480512,
+    createdAt: 1688899480511,
   },
   {
     avatar: "1f4da",
