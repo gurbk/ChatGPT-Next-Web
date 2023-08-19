@@ -1,10 +1,14 @@
+import { getClientConfig } from "../config/client";
 import { SubmitKey } from "../store/config";
+
+const isApp = !!getClientConfig()?.isApp;
 
 const cn = {
   WIP: "该功能正在开发中...",
   Error: {
-    Unauthorized:
-      "访问密码不正确或为空，请前往[登录](/#/auth)页输入正确的访问密码，密码前往群公告查看 | [点此查看群二维码](https://jsd.cdn.zzko.cn/gh/88lin/PicX@master/20230102/q.6xruiy508ic0.jpg)",
+    Unauthorized: isApp
+      ? "检测到无效 API Key，请前往[设置](/#/settings)页检查 API Key 是否配置正确。"
+      : "访问密码不正确或为空，请前往[登录](/#/auth)页输入正确的访问密码，密码前往群公告查看 | [点此查看群二维码](https://jsd.cdn.zzko.cn/gh/88lin/PicX@master/20230102/q.6xruiy508ic0.jpg)",
   },
   Auth: {
     Title: "需要密码",

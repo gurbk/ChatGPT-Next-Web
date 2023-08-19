@@ -1,12 +1,16 @@
+import { getClientConfig } from "../config/client";
 import { SubmitKey } from "../store/config";
 import { LocaleType } from "./index";
 
 // if you are adding a new translation, please use PartialLocaleType instead of LocaleType
+
+const isApp = !!getClientConfig()?.isApp;
 const en: LocaleType = {
   WIP: "Coming Soon...",
   Error: {
-    Unauthorized:
-      "Unauthorized access, please enter access code in [auth](/#/auth) page.Please check the group announcement for the password. | [Click here to view the group QR code](https://cdn.jsdelivr.net/gh/88lin/PicX@master/20230102/wxqun.6s5em3gihhs0.jpg)",
+    Unauthorized: isApp
+      ? "Invalid API Key, please check it in [Settings](/#/settings) page."
+      : "Unauthorized access, please enter access code in [auth](/#/auth) page, or enter your OpenAI API Key.Please check the group announcement for the password. | [Click here to view the group QR code](https://cdn.jsdelivr.net/gh/88lin/PicX@master/20230102/wxqun.6s5em3gihhs0.jpg)",
   },
   Auth: {
     Title: "Need Access Code",
